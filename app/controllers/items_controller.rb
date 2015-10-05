@@ -13,6 +13,8 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @wants = @item.want_users
+    @haves = @item.have_users
   end
 
   private
