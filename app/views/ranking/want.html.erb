@@ -3,7 +3,7 @@
     <% rank = 1 %>
     <% @items.each do |item| %>
       <div class="item-box">
-      <%= rank %>位  Have数:<%= item.have_count %>
+        <%= rank %>位  Want数:<%= item.want_count %>
         <div class="image">
           <div class="img-wrap">
             <% if item.large_image.present? %>
